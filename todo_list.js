@@ -53,3 +53,10 @@ clearCompletedBtn.addEventListener('click', clearCompletedTasks);
 
 // Initial display of tasks
 displayTasks();
+function clearAllTasks() {
+    tasks = []; // Set tasks array to an empty array
+    displayTasks();
+}
+
+// Add an event listener to the "Clear All Tasks" button
+document.getElementById('clearAllTasksBtn').addEventListener('click', clearAllTasks);
